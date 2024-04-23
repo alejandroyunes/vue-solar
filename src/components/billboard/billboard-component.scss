@@ -1,0 +1,176 @@
+.billboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  height: 100%;
+  max-width: var(--max-width);
+  padding: 0 24px;
+  gap: 24px;
+
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.billboard-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(90vh);
+  @media (max-width: 768px) {
+    height: calc(80vh);
+  }
+
+  .billboard-title {
+    margin: auto 0;
+
+    .slogan {
+      text-transform: uppercase;
+      font-size: 20px;
+      color: var(--color-heading);
+      padding-bottom: 16px;
+      padding-top: 16px;
+      animation: billboard-slide-in 1.2s 0.6s backwards;
+      line-height: 24px;
+      @media (max-width: 1024px) {
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .title,
+    .title-hightlight {
+      color: var(--color-heading);
+      line-height: 40px;
+      font-size: 50px;
+      line-height: 60px;
+      animation: billboard-slide-in 1s 0.6s backwards;
+      @media (max-width: 1024px) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      @media (max-width: 768px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+
+    .hightlight {
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .action-button {
+      margin-top: 40px;
+      animation: billboard-slide-in 1s 0.5s backwards;
+      color: var(--white);
+      background-color: var(--primary);
+      border: none;
+      padding: 16px 32px;
+      font-size: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      @media (max-width: 768px) {
+        padding: 14px 20px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .billboard-arrow {
+    padding-bottom: 16px;
+
+    .arrow-rotate {
+      transform: rotate(-45deg);
+      width: 80px;
+    }
+
+    .arrow {
+      animation: pointingDown 2s ease-in-out infinite 3.5s both;
+    }
+  }
+}
+
+.billboard-right {
+  position: relative;
+  height: calc(90vh);
+  animation: image-fade-in 1s 0.5s backwards;
+  @media (max-width: 768px) {
+    height: calc(80vh);
+  }
+
+  .billboard-image {
+    object-fit: cover;
+    height: calc(90vh);
+    transform: perspective(500px) rotateY(-10deg) scale(0.9);
+    margin-top: 10px;
+    @media (max-width: 1024px) {
+      width: 500px;
+      height: calc(80vh);
+    }
+
+    @media (max-width: 768px) {
+      width: 400px;
+    }
+
+    @media (max-width: 600px) {
+      width: 300px;
+    }
+
+    @media (max-width: 500px) {
+      width: 220px;
+      object-position: 18% 25%;
+    }
+
+    @media (max-width: 400px) {
+      width: 180px;
+    }
+  }
+}
+
+@keyframes pointingDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes billboard-slide-in {
+  0% {
+    transform: translateX(60px);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(50px);
+    visibility: hidden;
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes image-fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
