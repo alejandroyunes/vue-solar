@@ -1,0 +1,84 @@
+.billboard-fixed-container {
+  position: relative;
+
+  .billboard-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    height: 90vh;
+    align-content: center;
+    padding: 0;
+
+    @media (max-width: 900px) {
+      height: 80vh;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      font-size: text(h1);
+
+      @media (max-width: 700px) {
+        font-size: 1.5rem;
+      }
+
+      text-transform: uppercase;
+      padding-bottom: 40px;
+      animation-name: slideIn;
+      animation-duration: 1s;
+      animation-fill-mode: backwards;
+      opacity: 0.5;
+    }
+
+    .slogan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      z-index: 2;
+      font-size: 40px;
+
+      @media (max-width: 700px) {
+        font-size: text(h4);
+      }
+
+      color: colors(primary);
+      animation-name: slideIn;
+      animation-duration: 1s;
+      animation-fill-mode: backwards;
+      margin-top: 40px;
+
+      .light {
+        font-weight: lighter;
+        .span {
+          color: colors(white);
+        }
+      }
+    }
+
+    .arrow {
+      animation-name: pointingDown;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      margin-top: 40px;
+    }
+  }
+}
+
+.image-nillboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100vh;
+  z-index: -1;
+  background-color: black;
+  opacity: 0.3;
+  width: 100%;
+}
