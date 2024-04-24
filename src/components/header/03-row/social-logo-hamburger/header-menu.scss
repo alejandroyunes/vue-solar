@@ -1,0 +1,33 @@
+.header-menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .social {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 10px;
+    }
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  .logo {
+    max-height: 69px;
+    max-width: 76px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    .sun,
+    .moon {
+      margin-right: 10px;
+    }
+  }
+}
