@@ -8,12 +8,19 @@ import ImageDescription from '@/components/sections/02-row/image-description/Ima
 import PartnersComponent from '@/components/sections/01-row/partners/PartnersComponent.vue'
 import GetInTouch from '@/components/sections/02-row/get-in-touch/GetInTouch.vue'
 import IndentDescription from '@/components/sections/03-row/indent-description/IndentDescription.vue'
+import ImageTitleOverlay from '@/components/sections/03-row/images-title-overlay/ImagesTitleOverlay.vue'
 </script>
 
 <template>
-  <!-- <BillboardComponent /> -->
+  <BillboardComponent />
+
   <TitleSubtitle title="Great quality for your tracks" subtitle="OUR MUSIC STUDIO" />
   <IndentDescription />
+
+  <TitleSubtitle title="Crafting Masterpieces" subtitle="Quality is our heartbeat" marginTop />
+  <ImageTitleOverlay />
+
+
   <ImageTitle />
   <CeoDescription />
   <ImageDescription />
