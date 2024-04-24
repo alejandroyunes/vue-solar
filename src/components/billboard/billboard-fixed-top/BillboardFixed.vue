@@ -14,8 +14,9 @@ import ArrowDoubleSvg from '@/components/icons/ArrowDoubleSvg.vue'
 
       <div class="slogan">
 
-        <h2> Discover <span class="light">world</span>
-          <span class="span">class composers</span>
+        <h2> Discover
+          <span class="light">world</span>
+          <span class="span"> class composers</span>
         </h2>
 
         <div class="arrow">
@@ -26,6 +27,6 @@ import ArrowDoubleSvg from '@/components/icons/ArrowDoubleSvg.vue'
     </div>
 
   </div>
-  <img class="image-nillboard" src="/images/billboard/musicP.webp" alt="alt" />
-
+  <img class="image-billboard" src="/images/billboard/musicP.webp" alt="alt" />
+  <span class="overlay" />
 </template>

@@ -1,5 +1,5 @@
 :root {
-  --primary: #1f4b91;
+  --primary: #006e95;
   --indigo: #2c3e50;
 
   --white: #ffffff;
@@ -16,7 +16,7 @@
 
   --divider-light-1: rgba(60, 60, 60, 0.29);
   --divider-light-2: rgba(60, 60, 60, 0.12);
-  
+
   --divider-dark-1: rgba(84, 84, 84, 0.65);
   --divider-dark-2: rgba(84, 84, 84, 0.48);
 
@@ -46,7 +46,6 @@
   --color-text: var(--text-light-2);
 
   --color-hover: var(--gray-mute);
-
 }
 
 :root[data-color-scheme='dark'] {
