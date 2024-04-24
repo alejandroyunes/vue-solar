@@ -1,0 +1,42 @@
+.indent-description-container {
+  display: grid;
+  gap: 0 20px;
+  margin: 40px auto 0;
+
+  font-size: 18px;
+  max-width: var(--max-width);
+  color: var(--color-heading);
+
+  grid-template-areas:
+    'one one two three'
+    'one one two three';
+
+  @media (max-width: 900px) {
+    gap: 20px;
+    grid-template-areas:
+      'one'
+      'three'
+      'two';
+  }
+
+  .indent-description {
+    grid-area: one;
+  }
+
+  .ceo-indent {
+    grid-area: two;
+  }
+
+  .ceo-last {
+    grid-area: three;
+  }
+
+  .first-letter {
+    font-size: 48px;
+    float: left;
+    display: inline;
+    line-height: 1;
+    padding-right: 24px;
+    color: var(--color-heading);
+  }
+}

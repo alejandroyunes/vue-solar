@@ -25,6 +25,8 @@
   .menu {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    min-width: 120px;
     .sun,
     .moon {
       margin-right: 10px;
