@@ -19,7 +19,7 @@
 .item {
   position: relative;
   overflow: hidden;
-
+  cursor: pointer;
   &:hover {
     animation: fadeIn 1s forwards;
   }
