@@ -16,7 +16,7 @@
     list-style-type: none;
     gap: 20px;
     border-bottom: 1px solid var(--color-border);
-
+    padding: 4px;
     @media (max-width: 900px) {
       flex-direction: column;
     }
@@ -24,7 +24,6 @@
     .list {
       min-width: 200px;
       text-align: left;
-
       @media (max-width: 900px) {
         text-align: center;
       }

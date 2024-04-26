@@ -1,0 +1,42 @@
+.image-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 80px auto 0;
+  max-width: var(--max-width);
+  overflow: hidden;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left-side {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+
+  .first-image {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .second-image {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    .image {
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.billboard {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
