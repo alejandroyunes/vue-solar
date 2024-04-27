@@ -1,10 +1,8 @@
 <script lang="ts" setup>
 import './right-nav.scss'
-import Twitter from '@/components/icons/social-media/TwitterSvg.vue'
 import ExitSvg from '@/components/icons/ExitSvg.vue'
-import Youtube from '@/components/icons/social-media/YoutubeSvg.vue'
-import Facebook from '@/components/icons/social-media/FacebookSvg.vue'
-import Instagram from '@/components/icons/social-media/InstagramSvg.vue'
+
+import ArrowDownDropdownSvg from '@/components/icons/ArrowDownDropdownSvg.vue'
 
 interface Props {
   toggleRightNav: () => void
@@ -16,7 +14,8 @@ const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
 </script>
 
 <template>
-  <div :class="['right-nav-container', isRightNavOpen ? 'right-slide-in' : '', isRightNavOpen === false ? 'right-slide-out' : '']">
+  <div
+    :class="['right-nav-container', isRightNavOpen ? 'right-slide-in' : '', isRightNavOpen === false ? 'right-slide-out' : '']">
     <div class="right-nav-header">
       <p class="title">Estrella <span class="title-strong">Immobilien</span></p>
 
@@ -29,27 +28,21 @@ const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
       <ul class="list">
         <li class="item">
           <span class="svg">
-            <Facebook class="icon" />
+            <ArrowDownDropdownSvg class="icon" />
           </span>
-          <p class="link">Facebook</p>
+          <p class="link">Home</p>
         </li>
         <li class="item">
           <span class="svg">
-            <Instagram />
+            <ArrowDownDropdownSvg class="icon" />
           </span>
           <p class="link">Instagram</p>
         </li>
         <li class="item">
           <span class="svg">
-            <Twitter />
+            <ArrowDownDropdownSvg class="icon" />
           </span>
           <p class="link">Twitter</p>
-        </li>
-        <li class="item">
-          <span class="svg">
-            <Youtube />
-          </span>
-          <p class="link">Youtube</p>
         </li>
       </ul>
 
@@ -62,5 +55,5 @@ const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
     </div>
   </div>
 
-  <div v-if="isRightNavOpen" @click="toggleRightNav" class="right-nav-bg" ></div>
+  <div v-if="isRightNavOpen" @click="toggleRightNav" class="right-nav-bg"></div>
 </template>

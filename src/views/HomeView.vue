@@ -15,24 +15,19 @@ import SocialHover from '@/components/sections/06-row/social-hover/SocialHover.v
 </script>
 
 <template>
-  <!-- <BillboardComponent /> -->
-  <!-- 
+  <BillboardComponent />
+
   <TitleSubtitle title="Great quality for your tracks" subtitle="OUR MUSIC STUDIO" />
   <IndentDescription />
 
   <TitleSubtitle title="Crafting Masterpieces" subtitle="Quality is our heartbeat" marginTop />
   <ImageTitleOverlay />
- -->
-  <!-- <TitleSubtitle title="Upcoming Events" subtitle="Tour Dates 2024" />
-  <UpcomingEvents /> -->
 
-  <!-- <ImageGrid /> -->
+  <TitleSubtitle title="Upcoming Events" subtitle="Tour Dates 2024" />
+  <UpcomingEvents />
+
+  <ImageGrid />
 
   <SocialHover />
 
-  <ImageTitle />
-  <CeoDescription />
-  <ImageDescription />
-  <PartnersComponent />
-  <GetInTouch />
 </template>
