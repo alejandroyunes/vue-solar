@@ -3,6 +3,7 @@ import './right-nav.scss'
 import ExitSvg from '@/components/icons/ExitSvg.vue'
 
 import ArrowDownDropdownSvg from '@/components/icons/ArrowDownDropdownSvg.vue'
+import router from '@/router'
 
 interface Props {
   toggleRightNav: () => void
@@ -10,6 +11,11 @@ interface Props {
 }
 
 const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
+
+const handleClick = (url: string) => {
+  toggleRightNav()
+  router.push(url)
+}
 
 </script>
 
@@ -28,32 +34,26 @@ const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
 
     <div class="right-nav-content">
       <ul class="list">
-        <router-link to="/">
-          <li class="item">
-            <span class="svg">
-              <ArrowDownDropdownSvg class="icon" />
-            </span>
-            <p class="link">Home</p>
-          </li>
-        </router-link>
+        <li class="item" @click="handleClick('/')">
+          <span class="svg">
+            <ArrowDownDropdownSvg class="icon" />
+          </span>
+          <p class="link">Home</p>
+        </li>
 
-        <router-link to="/About">
-          <li class="item">
-            <span class="svg">
-              <ArrowDownDropdownSvg class="icon" />
-            </span>
-            <p class="link">About</p>
-          </li>
-        </router-link>
+        <li class="item" @click="handleClick('/about')">
+          <span class="svg">
+            <ArrowDownDropdownSvg class="icon" />
+          </span>
+          <p class="link">About</p>
+        </li>
 
-        <router-link to="/contact">
-          <li class="item">
-            <span class="svg">
-              <ArrowDownDropdownSvg class="icon" />
-            </span>
-            <p class="link">Contact</p>
-          </li>
-        </router-link>
+        <li class="item" @click="handleClick('/contact')">
+          <span class="svg">
+            <ArrowDownDropdownSvg class="icon" />
+          </span>
+          <p class="link">Contact</p>
+        </li>
 
       </ul>
 

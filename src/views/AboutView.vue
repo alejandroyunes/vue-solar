@@ -4,6 +4,6 @@ import MissionVision from '@/components/sections/02-row/mission-vision/MissionVi
 </script>
 
 <template>
-  <ImageHeader :imageUrl="'/images/sections/01-row/title-header/about.webp'"  :title="'About us'" />
+  <ImageHeader :imageUrl="'/images/sections/01-row/title-header/music-about.webp'" :title="'About us'" />
   <MissionVision />
 </template>
