@@ -43,15 +43,14 @@
       }
       .text {
         white-space: nowrap;
-        color: var(--color-heading);
         width: 100%;
         text-align: center;
         z-index: 99;
       }
 
       .text-container {
-        font-size: text(h3);
-        color: var(--color-heading);
+        font-size: 20px;
+        color: var(--white);
       }
     }
   }
