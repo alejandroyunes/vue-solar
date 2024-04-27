@@ -37,8 +37,7 @@ const toggleRightNav = () => {
       <InstagramCircle class="icon" />
     </div>
 
-    <img src="/images/header/logos/logo-mps2.png" class="logo" alt="logo mps" />
-
+    <img src="/images/header/logos/logo-music-high.png" class="logo" alt="logo mps" />
     <div class="menu">
 
       <MoonSvg v-if="!isDarkMode" @click="handleTheme" class="icon sun" />

@@ -17,7 +17,9 @@ const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
   <div
     :class="['right-nav-container', isRightNavOpen ? 'right-slide-in' : '', isRightNavOpen === false ? 'right-slide-out' : '']">
     <div class="right-nav-header">
-      <p class="title">Estrella <span class="title-strong">Immobilien</span></p>
+
+      <img src="/images/header/logos/logo-music-high.png" class="logo" alt="logo mps" />
+      <p class="title">MPS <span class="title-strong">Gmbh</span></p>
 
       <div @click="toggleRightNav" class="animation-exit">
         <ExitSvg class="exit-icon" />
@@ -26,24 +28,33 @@ const { toggleRightNav, isRightNavOpen } = defineProps<Props>()
 
     <div class="right-nav-content">
       <ul class="list">
-        <li class="item">
-          <span class="svg">
-            <ArrowDownDropdownSvg class="icon" />
-          </span>
-          <p class="link">Home</p>
-        </li>
-        <li class="item">
-          <span class="svg">
-            <ArrowDownDropdownSvg class="icon" />
-          </span>
-          <p class="link">Instagram</p>
-        </li>
-        <li class="item">
-          <span class="svg">
-            <ArrowDownDropdownSvg class="icon" />
-          </span>
-          <p class="link">Twitter</p>
-        </li>
+        <router-link to="/">
+          <li class="item">
+            <span class="svg">
+              <ArrowDownDropdownSvg class="icon" />
+            </span>
+            <p class="link">Home</p>
+          </li>
+        </router-link>
+
+        <router-link to="/About">
+          <li class="item">
+            <span class="svg">
+              <ArrowDownDropdownSvg class="icon" />
+            </span>
+            <p class="link">About</p>
+          </li>
+        </router-link>
+
+        <router-link to="/contact">
+          <li class="item">
+            <span class="svg">
+              <ArrowDownDropdownSvg class="icon" />
+            </span>
+            <p class="link">Contact</p>
+          </li>
+        </router-link>
+
       </ul>
 
       <div class="contact">

@@ -29,12 +29,17 @@
     display: flex;
     padding-left: 18px;
     font-size: 24px;
-
-    .title {
-      margin-top: 48px;
-      color: var(--color-heading);
+    align-items: center;
+    height: 120px;
+    .logo {
+      width: auto;
+      height: 40px;
+      cursor: pointer;
     }
-
+    .title {
+      color: var(--color-heading);
+      padding-left: 10px;
+    }
     .title-strong {
       color: var(--primary);
       font-weight: bold;
