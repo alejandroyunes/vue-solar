@@ -11,6 +11,7 @@ import IndentDescription from '@/components/sections/03-row/indent-description/I
 import ImageTitleOverlay from '@/components/sections/03-row/images-title-overlay/ImagesTitleOverlay.vue'
 import UpcomingEvents from '@/components/sections/04-row/UpcomingEvents.vue'
 import ImageGrid from '@/components/sections/03-row/images-grid/ImageGrid.vue'
+import SocialHover from '@/components/sections/06-row/social-hover/SocialHover.vue'
 </script>
 
 <template>
@@ -25,7 +26,9 @@ import ImageGrid from '@/components/sections/03-row/images-grid/ImageGrid.vue'
   <!-- <TitleSubtitle title="Upcoming Events" subtitle="Tour Dates 2024" />
   <UpcomingEvents /> -->
 
-  <ImageGrid />
+  <!-- <ImageGrid /> -->
+
+  <SocialHover />
 
   <ImageTitle />
   <CeoDescription />
