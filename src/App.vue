@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Header from '@/components/header/03-row/social-logo-hamburger/HeaderMenu.vue'
+import Header from '@/components/header/03-row/logo-menu-hamburger/HeaderComponent.vue'
 import Footer from './components/footer/copyright-centered/FooterCopyright.vue'
 import CookiesCompliance from './components/sections/01-row/cookies-compliance/CookiesCompliance.vue'
 
