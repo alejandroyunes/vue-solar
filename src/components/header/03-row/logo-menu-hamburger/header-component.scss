@@ -4,14 +4,14 @@
   justify-content: space-between;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 10px 20px 0;
+  padding: 10px 0;
 
   .desktop-only {
     @media (max-width: 768px) {
       display: none;
     }
   }
-  
+
   .mobile-only {
     @media (min-width: 768px) {
       display: none;

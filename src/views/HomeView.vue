@@ -11,7 +11,7 @@ import SocialHover from '@/components/sections/06-row/social-hover/SocialHover.v
 <template>
   <BillboardComponent />
 
-  <TitleSubtitle title="Great quality for your tracks" subtitle="OUR MUSIC STUDIO" />
+  <TitleSubtitle title="Elevate your world with Sun-Powered Solutions" subtitle="OUR MUSIC STUDIO" />
   <IndentDescription />
 
   <TitleSubtitle title="Crafting Masterpieces" subtitle="Quality is our heartbeat" marginTop />
