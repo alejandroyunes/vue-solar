@@ -24,7 +24,7 @@ const handleClick = (url: string) => {
     :class="['right-nav-container', isRightNavOpen ? 'right-slide-in' : '', isRightNavOpen === false ? 'right-slide-out' : '']">
     <div class="right-nav-header">
 
-      <img src="/images/header/logos/logo-music-high.png" class="logo" alt="logo mps" />
+      <img src="/images/header/logos/solar-logo.png" class="logo" alt="logo mps" />
       <p class="title">MPS <span class="title-strong">Gmbh</span></p>
 
       <div @click="toggleRightNav" class="animation-exit">
