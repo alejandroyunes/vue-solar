@@ -9,7 +9,7 @@ const year = new Date().getFullYear()
   <section>
     <div class="footer-container">
       <router-link class="link" to="/">
-        <img src="/images/header/logos/solar-logo.png" alt="alt" width="200px" height="54px" />
+        <img src="/images/header/logos/sienar-high-logo.png" alt="alt" width="200px" height="54px" />
       </router-link>
 
       <div class="address">
