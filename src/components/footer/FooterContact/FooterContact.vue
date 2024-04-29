@@ -8,8 +8,9 @@ const year = new Date().getFullYear()
 <template>
   <section>
     <div class="footer-container">
-
-      <img src="/images/header/logos/solar-logo.png" alt="alt" width="200px" height="54px" />
+      <router-link class="link" to="/">
+        <img src="/images/header/logos/solar-logo.png" alt="alt" width="200px" height="54px" />
+      </router-link>
 
       <div class="address">
         <p class="title">Office</p>

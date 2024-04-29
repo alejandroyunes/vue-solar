@@ -25,7 +25,6 @@ const handleClick = (url: string) => {
     <div class="right-nav-header">
 
       <img src="/images/header/logos/solar-logo.png" class="logo" alt="logo mps" />
-      <p class="title">MPS <span class="title-strong">Gmbh</span></p>
 
       <div @click="toggleRightNav" class="animation-exit">
         <ExitSvg class="exit-icon" />

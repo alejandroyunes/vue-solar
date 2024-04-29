@@ -28,11 +28,11 @@ import './image-description.scss'
       </div>
     </div>
 
-    <div class="image-description-button">
+    <!-- <div class="image-description-button">
       <router-link to="/services">
         <button>Services</button>
       </router-link>
-    </div>
+    </div> -->
 
   </section>
 </template>
