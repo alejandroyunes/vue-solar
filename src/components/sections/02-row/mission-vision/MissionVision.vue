@@ -4,28 +4,26 @@ import './mission-vision.scss'
 
 <template>
   <div class="mission-vision">
-    <h3 class="title">Our Core Values</h3>
+    <h3 class="title">Our History</h3>
     <p class="description">
-      Founded in 2022 for music enthusiasts and creators we believe in the transformative power of sound and the ability
-      of music to connect and inspire. Our platform is a vibrant community where passion meets innovation, providing a
-      space for musicians, producers, and music lovers to explore, create, and elevate their craft.
+      At Sienar Solar, our commitment lies in delivering sustainable and renewable energy solutions that empower
+      individuals, businesses, and communities. Fueled by a passion for harnessing the sun's power, we aim to make a
+      positive environmental impact, aiding clients in reducing their carbon footprint and energy costs.
     </p>
   </div>
   <div class="about-us">
     <div>
       <h3 class="sub-title">Our Mission</h3>
-      <p class="description">Our mission is to bring artists and clients together for extraordinary musical experiences,
-        creating memories
-        that resonate for a lifetime. We are committed to providing unparalleled support for artists in tours and
-        recording, offering organizational assistance in legal and financial matters, and curating exceptional events
-        that bring the joy of music to various settings.</p>
+      <p class="description">As a premier solar energy provider, we excel in crafting, installing, and servicing
+        cutting-edge solar panel systems for diverse properties. Our adept team, boasting extensive experience in solar
+        technology, guarantees clients receive customized, dependable, and cost-efficient solar solutions.</p>
     </div>
     <div>
       <h3 class="sub-title">Our Vision</h3>
-      <p class="description">We envisions a world where every individual, regardless of their musical background, has
-        the tools, support,
-        and platform to unleash their creative potential. We aspire to be the go-to destination for musicians seeking
-        top-notch production services, financial guidance, legal support, and event organization.</p>
+      <p class="description">We embrace the transformative potential of solar energy for a sustainable future. Our
+        dedication to quality and customer contentment shines through every project. Beginning with the initial
+        consultation and extending to post-installation support, we collaborate closely with clients, offering
+        personalized guidance, transparent communication, and outstanding service throughout the process.</p>
     </div>
   </div>
 </template>

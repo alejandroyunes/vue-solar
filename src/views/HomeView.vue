@@ -4,6 +4,7 @@ import TitleSubtitle from '@/components/sections/01-row/title-subtitle/TitleSubt
 import ImageDescription from '@/components/sections/03-row/image-description/ImageDescription.vue'
 import ImageTitle from '@/components/sections/02-row/image-title/ImageTitle.vue'
 import CardDescription from '@/components/sections/04-row/card-description/CardDescription.vue'
+import GetInTouch from '@/components/sections/02-row/get-in-touch/GetInTouch.vue'
 </script>
 
 <template>
@@ -19,5 +20,5 @@ import CardDescription from '@/components/sections/04-row/card-description/CardD
     marginTop />
   <ImageDescription />
 
-
+  <GetInTouch />
 </template>

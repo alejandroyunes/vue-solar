@@ -10,10 +10,9 @@ import LocationSvg from "@/components/icons/LocationSvg.vue"
     <div class="get-in-touch-left">
       <p class="slogan">Contact Us</p>
       <p class="title">Get in touch</p>
-      <p class="description">Feel free to reach out to us for any inquiries or assistance. We are here to help you find
-        the perfect
-        accommodation for your needs. Contact us via email or give us a call. Our dedicated team looks forward to
-        assisting you with any questions or reservations.</p>
+      <p class="description">For inquiries or to explore sustainable energy options, get in touch with Sienar Solar
+        today. Contact us via email or give us a call. Our dedicated team looks forward to
+        assisting you with any questions.</p>
     </div>
 
     <div class="get-in-touch-right">

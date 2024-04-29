@@ -4,7 +4,6 @@
   grid-template-columns: 1fr 1fr;
   margin: 80px auto 0;
   max-width: var(--max-width);
-  padding: 0 20px;
   @media (max-width: 900px) {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -14,7 +13,6 @@
       font-weight: bold;
       font-size: 24px;
       color: var(--color-heading);
-
     }
     .title {
       font-size: 32px;
@@ -35,6 +33,7 @@
       display: flex;
       flex-direction: row;
       margin-bottom: 24px;
+      align-items: flex-end;
 
       .icon-bg {
         width: 40px;
