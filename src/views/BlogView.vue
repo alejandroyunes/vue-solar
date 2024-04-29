@@ -1,9 +1,10 @@
 <script lang="ts" setup>
-import ImageHeader from '@/components/sections/01-row/image-header/ImageHeader.vue'
-import MissionVision from '@/components/sections/02-row/mission-vision/MissionVision.vue'
+import TitleArrow from '@/components/sections/01-row/title-arrow/TitleArrow.vue'
+import BlogImage from '@/components/sections/03-row/blog-image-description/BlogImage.vue'
+
 </script>
 
 <template>
-  <ImageHeader :imageUrl="'/images/sections/01-row/title-header/music-about.webp'" :title="'About us'" />
-  <MissionVision />
+  <TitleArrow title="Blog" />
+  <BlogImage />
 </template>
