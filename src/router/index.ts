@@ -28,6 +28,10 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue')
+    },
+    {
+      path: '/blog/:id',
+      component: () => import('../views/blog/BlogItem.vue')
     }
   ],
   scrollBehavior(to) {
