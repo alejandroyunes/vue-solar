@@ -38,7 +38,7 @@ const toggleTopNav = () => {
       <TopNav :toggleTopNav="toggleTopNav" :isTopNavOpen="isTopNavOpen" />
 
       <router-link to="/" class="link">
-        <img src="/images/header/logos/solar-logo.png" alt="logo" class="logo" width="160px" height="40px" />
+        <img src="/images/header/logos/sienar-high-logo.png" alt="logo" class="logo" width="160px" height="40px" />
       </router-link>
       <div>
         <Menu class="desktop-only" />
